@@ -58,7 +58,6 @@ public class BookPurchase {
     }
 
     public void output() {
-        // ---出力開始---
         System.out.println(Constant.OUTPUT_START);
         List<Entry<String, Integer>> list_entries =
                 new ArrayList<Entry<String, Integer>>(employeeNameAndMoneyMap.entrySet());
@@ -70,7 +69,6 @@ public class BookPurchase {
         for (Entry<String, Integer> entry : list_entries) {
             System.out.println(entry.getKey());
         }
-        // ---出力終了---
         System.out.println();
         System.out.println(Constant.OUTPUT_END);
     }
